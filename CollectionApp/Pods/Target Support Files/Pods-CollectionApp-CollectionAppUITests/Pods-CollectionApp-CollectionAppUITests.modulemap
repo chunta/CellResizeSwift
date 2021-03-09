@@ -1,0 +1,6 @@
+framework module Pods_CollectionApp_CollectionAppUITests {
+  umbrella header "Pods-CollectionApp-CollectionAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
