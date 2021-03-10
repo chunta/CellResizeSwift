@@ -48,10 +48,8 @@ class HModelPresenter {
     
     func modelDataAt(index:Int)->CellRow {
         
-        if let theModel = model {
-            if (theModel.count > index) {
-                return theModel[index]
-            }
+        if let theModel = model, theModel.count > index {
+            return theModel[index]
         }
         return CellRow.init(firstName: "", url: "", lastName: "")
     }
