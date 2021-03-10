@@ -13,7 +13,7 @@ protocol SingleImageCellDelegate {
 }
 
 class SingleImageCell: UICollectionViewCell {
-
+    
     @IBOutlet var profileImage:UIImageView!
     @IBOutlet var widthCts:NSLayoutConstraint!
     @IBOutlet var heightCts:NSLayoutConstraint!
@@ -22,7 +22,7 @@ class SingleImageCell: UICollectionViewCell {
     var ratio:CGFloat = 1.0
     
     class func nibName()->String {
-    
+        
         return "SingleImageCell"
     }
     
@@ -46,14 +46,17 @@ class SingleImageCell: UICollectionViewCell {
         self.backgroundColor = UIColor.orange
     }
     
-    func setData(dic:[String:Any]) {
+    func setData(dic:CellRow) {
         
-        let urlString:String = dic["url"] as! String
-        let url:URL = URL(string: urlString)!
+        let urlString:String = dic.url
+        let url:URL? = URL(string: urlString)
         profileImage.contentMode = .scaleAspectFit
         profileImage.layer.borderWidth = 1 
-        profileImage.sd_setImage(with: url, placeholderImage: nil, options: .highPriority) { (image, error, cacheType, url) in
+        profileImage.sd_setImage(with: url ?? nil,
+                                 placeholderImage: UIImage(named: "PlaceHolder"),
+                                 options: .highPriority) { (image, error, cacheType, url) in
             
+            self.ratio = 1.0
             if let theImage = image {
                 self.ratio = theImage.size.width / theImage.size.height
             }
@@ -62,5 +65,5 @@ class SingleImageCell: UICollectionViewCell {
             }
         }
     }
-
+    
 }

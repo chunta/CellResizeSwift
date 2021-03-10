@@ -51,9 +51,9 @@ class SingleImageViewController: UIViewController,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell:SingleImageCell = collectionView.dequeueReusableCell(withReuseIdentifier: SingleImageCell.nibName(), for: indexPath) as! SingleImageCell
-        let dic:[String:Any] = hmodelPresenter.modelDataAt(index: indexPath.row)
+        let cellRow:CellRow = hmodelPresenter.modelDataAt(index: indexPath.row)
         cell.delegate = self
-        cell.setData(dic: dic)
+        cell.setData(dic: cellRow)
         cell.setWidth(width: UIScreen.main.bounds.width)
         return cell
     }
