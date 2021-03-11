@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     @IBAction func onImageTextCollectionView() {
         
+        self.navigationController?.pushViewController(ImageAndTextViewController.init(), animated: true)
     }
 }
 

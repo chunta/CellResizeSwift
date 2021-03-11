@@ -3,11 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0591C41F25F87A150026AA0C /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0591C41E25F87A150026AA0C /* CellModel.swift */; };
+		0591C43B25F8BF980026AA0C /* ImageTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0591C43925F8BF980026AA0C /* ImageTextCell.swift */; };
+		0591C43C25F8BF980026AA0C /* ImageTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0591C43A25F8BF980026AA0C /* ImageTextCell.xib */; };
+		0591C44925F8C1FB0026AA0C /* ImageAndTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0591C44825F8C1FB0026AA0C /* ImageAndTextViewController.swift */; };
+		05D6FD6425FA2874003016BE /* Appier.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D6FCDA25F9C736003016BE /* Appier.xcframework */; };
+		05D6FD6525FA2874003016BE /* Appier.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05D6FCDA25F9C736003016BE /* Appier.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		07168E66443787B47AD21C69 /* Pods_CollectionAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864359A637E0295D6D0B70EC /* Pods_CollectionAppTests.framework */; };
 		76E78C88C293F476BD954A85 /* Pods_CollectionApp_CollectionAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 234D2B5A77B8088136290CEA /* Pods_CollectionApp_CollectionAppUITests.framework */; };
 		A23D114AEC053856B46A2709 /* Pods_CollectionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891194D4A3CAFA8435338B67 /* Pods_CollectionApp.framework */; };
@@ -42,8 +47,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		05D6FD6625FA2874003016BE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05D6FD6525FA2874003016BE /* Appier.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0591C41E25F87A150026AA0C /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		0591C43925F8BF980026AA0C /* ImageTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTextCell.swift; sourceTree = "<group>"; };
+		0591C43A25F8BF980026AA0C /* ImageTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTextCell.xib; sourceTree = "<group>"; };
+		0591C44825F8C1FB0026AA0C /* ImageAndTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndTextViewController.swift; sourceTree = "<group>"; };
+		05D6FCDA25F9C736003016BE /* Appier.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Appier.xcframework; sourceTree = "<group>"; };
 		07D5B650A7B123FA787BBA04 /* Pods-CollectionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionApp.release.xcconfig"; path = "Target Support Files/Pods-CollectionApp/Pods-CollectionApp.release.xcconfig"; sourceTree = "<group>"; };
 		234D2B5A77B8088136290CEA /* Pods_CollectionApp_CollectionAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionApp_CollectionAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3317A6FFAB22F34607A0A90D /* Pods-CollectionAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionAppTests.debug.xcconfig"; path = "Target Support Files/Pods-CollectionAppTests/Pods-CollectionAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D6FD6425FA2874003016BE /* Appier.xcframework in Frameworks */,
 				A23D114AEC053856B46A2709 /* Pods_CollectionApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +141,7 @@
 		A08F1B99994D2FEB6B778338 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				05D6FCDA25F9C736003016BE /* Appier.xcframework */,
 				891194D4A3CAFA8435338B67 /* Pods_CollectionApp.framework */,
 				234D2B5A77B8088136290CEA /* Pods_CollectionApp_CollectionAppUITests.framework */,
 				864359A637E0295D6D0B70EC /* Pods_CollectionAppTests.framework */,
@@ -161,6 +186,9 @@
 				F7F533BE25F7C6FD00263D40 /* SingleImageCell.swift */,
 				F7F533BF25F7C6FD00263D40 /* SingleImageCell.xib */,
 				0591C41E25F87A150026AA0C /* CellModel.swift */,
+				0591C43925F8BF980026AA0C /* ImageTextCell.swift */,
+				0591C43A25F8BF980026AA0C /* ImageTextCell.xib */,
+				0591C44825F8C1FB0026AA0C /* ImageAndTextViewController.swift */,
 			);
 			path = CollectionApp;
 			sourceTree = "<group>";
@@ -195,6 +223,7 @@
 				F7F5337B25F7BA9E00263D40 /* Frameworks */,
 				F7F5337C25F7BA9E00263D40 /* Resources */,
 				59828FBDEE1037D58FB65E35 /* [CP] Embed Pods Frameworks */,
+				05D6FD6625FA2874003016BE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F5338E25F7BA9F00263D40 /* LaunchScreen.storyboard in Resources */,
+				0591C43C25F8BF980026AA0C /* ImageTextCell.xib in Resources */,
 				F7F533C125F7C6FD00263D40 /* SingleImageCell.xib in Resources */,
 				F7F5338B25F7BA9F00263D40 /* Assets.xcassets in Resources */,
 				F7F5338925F7BA9E00263D40 /* Main.storyboard in Resources */,
@@ -427,7 +457,9 @@
 				F7F533B525F7BBD800263D40 /* SingleImageViewController.swift in Sources */,
 				F7F533C025F7C6FD00263D40 /* SingleImageCell.swift in Sources */,
 				0591C41F25F87A150026AA0C /* CellModel.swift in Sources */,
+				0591C44925F8C1FB0026AA0C /* ImageAndTextViewController.swift in Sources */,
 				F7F5338425F7BA9E00263D40 /* SceneDelegate.swift in Sources */,
+				0591C43B25F8BF980026AA0C /* ImageTextCell.swift in Sources */,
 				F7F533BA25F7BF6500263D40 /* HModelPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,12 +638,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V72QYCH5UU;
 				INFOPLIST_FILE = CollectionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appier.CollectionApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appier.rexdev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -625,12 +659,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V72QYCH5UU;
 				INFOPLIST_FILE = CollectionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appier.CollectionApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appier.rexdev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
